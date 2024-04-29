@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scraping Voli", "Scraping Voli\Scraping Voli.csproj", "{163475FB-0C0F-40AD-BB3A-B58408A0DC9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{163475FB-0C0F-40AD-BB3A-B58408A0DC9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163475FB-0C0F-40AD-BB3A-B58408A0DC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163475FB-0C0F-40AD-BB3A-B58408A0DC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163475FB-0C0F-40AD-BB3A-B58408A0DC9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AD65A04-56C0-4C11-9150-2F29E51C4D18}
+	EndGlobalSection
+EndGlobal
