@@ -35,9 +35,14 @@ class Program
         driver.Navigate().GoToUrl("https://www.kayak.it/flights/" + partenza + "-" + destinazione + "/2024-05-29/2024-06-05?sort=bestflight_a");
         WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         wait.Until(driver => ((IJavaScriptExecutor)driver).ExecuteScript("return document.readyState").Equals("complete"));
-        IWebElement div = driver.FindElement(By.ClassName("hJSA"));
+        IWebElement button = driver.FindElement(By.ClassName("RxNS"));
+        
+        button.Click();
 
-        var innerDivs = div.FindElements(By.ClassName("VY2U"));
+        Thread.Sleep(2000);
+        var div = driver.FindElements(By.ClassName("hJSA"));
+
+        var innerDivs = driver.FindElements(By.ClassName("VY2U"));
         List<IWebElement> orari = new List<IWebElement>();
 
         foreach (var innerDiv in innerDivs)
@@ -59,7 +64,15 @@ class Program
 
         for (int i = 0; i < lista.Count; i++)
         {
-            Console.WriteLine(lista[i]);
+            if(i % 3 == 2)
+            {
+                Console.WriteLine("\n");
+            }
+            else
+            {
+                Console.WriteLine(lista[i]);
+            }
+            
         }
            
     }
